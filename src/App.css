@@ -207,7 +207,7 @@ p {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  padding: 0.20em 0.50em;
+  padding: 0.20em 0.55em;
   font-size: 1em;
   box-shadow: 0 1px 4px rgba(0,0,0,0.07);
   transition: background 0.2s;
