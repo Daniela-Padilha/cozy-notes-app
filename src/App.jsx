@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import './App.css'
 
 function App() {
@@ -9,6 +9,17 @@ function App() {
   ];
   const [showConfirm, setShowConfirm] = useState(false);
   const [noteToDelete, setNoteToDelete] = useState(null);
+
+  useEffect(() => {
+    const savedNotes = localStorage.getItem("cozyNotes");
+    if (savedNotes) {
+      setNotes(JSON.parse(savedNotes));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cozyNotes", JSON.stringify(notes));
+  }, [notes]);
 
   function addNote() {
     if (input.trim() === "") return;
