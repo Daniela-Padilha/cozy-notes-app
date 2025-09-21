@@ -1,0 +1,217 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body, .container {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-image: url('https://cdn.pixabay.com/photo/2024/06/09/17/08/maple-8819111_1280.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* This pushes footer down */
+}
+
+header {
+  width: 100vw;
+  box-sizing: border-box;
+  background: #ebc9a0;
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-bottom: 2px solid #cfb991;
+  width: 100%;
+}
+
+h1 {
+  color: #b15e2c;
+  letter-spacing: 1px;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+main {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #b15e2c;
+  width: 60%;
+  max-width: 300px;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #cfb991;
+  color: #5e3c1a;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.5em;
+  background: #6f4e37;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.16em 0.25em;  /* Smaller button */
+  font-size: 1em;          /* Smaller icon/text */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #a1865c;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  position: relative;
+  margin: 0.7rem;
+  padding: 1.2rem 1.5rem 2.2rem 1.1rem;
+  border-radius: 10px;
+  color: #6f4e37;
+  font-size: 1.05rem;
+  min-height: 3.5em;
+  box-shadow: 3px 4px 14px rgba(80, 60, 20, 0.13), 2px 2px 5px rgba(0,0,0,0.09);
+  width: 250px;
+  height: auto;
+  max-height: 250px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Comic Sans MS', 'Marker Felt', cursive, serif;
+  transition: transform 0.15s;
+  word-break: break-word;
+  white-space: pre-line; /* preserves line breaks, allows wrapping */
+  overflow-wrap: break-word;
+}
+
+li:hover {
+  transform: rotate(1deg) scale(1.03);
+  z-index: 2;
+}
+
+footer {
+  background: #ebc9a0;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #cfb991;
+  color: #7d5a32;
+}
+
+footer a {
+  color: #b15e2c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color:#8b5e34;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(80, 50, 20, 0.35); /* cozy semi-transparent brown */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fffbea;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(80, 60, 20, 0.18);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  min-width: 260px;
+  font-family: 'Georgia', serif;
+}
+
+.modal-buttons {
+  margin-top: 1rem;
+}
+
+.modal-confirm {
+  background: #e17c6b;
+  color: #fffbea;
+  border: none;
+  padding: 0.5em 1.4em;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.modal-confirm:hover {
+  background: #ba5e48;
+}
+
+.modal-cancel {
+  background: #b4b381;
+  color: #fffbea;
+  border: none;
+  padding: 0.5em 1.4em;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-cancel:hover {
+  background: #8d9455;
+}
+
+p {
+  color: #7d5a32;
+}
+
+.note-text.done {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.done-btn {
+  position: absolute;
+  right: 3em;
+  bottom: 0.5em;
+  background: #b4b381;
+  color: #fffbea;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.20em 0.50em;
+  font-size: 1em;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  transition: background 0.2s;
+}
+.done-btn:hover {
+  background: #8d9455;
+}
