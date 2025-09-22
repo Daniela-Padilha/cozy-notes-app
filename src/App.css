@@ -21,17 +21,12 @@ body, .container {
   flex-direction: column;
 }
 
-main {
-  flex: 1; /* This pushes footer down */
-}
-
 header {
   width: 100vw;
   box-sizing: border-box;
   background: #ebc9a0;
   padding: 1.5rem 1rem 1rem 1rem;
   border-bottom: 2px solid #cfb991;
-  width: 100%;
 }
 
 h1 {
@@ -43,6 +38,7 @@ h1 {
 
 main {
   padding: 2rem 1rem 1rem 1rem;
+  flex: 1;
 }
 
 input[type="text"] {
@@ -52,7 +48,7 @@ input[type="text"] {
   width: 60%;
   max-width: 300px;
   margin-right: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 button {
