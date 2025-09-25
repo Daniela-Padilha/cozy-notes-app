@@ -6,7 +6,7 @@ Take notes, jot down to-dos, and keep your autumn vibes strong!
 
 **Note:** This is my very first project using JavaScript and React! I’m learning as I go, so feedback and ideas are always welcome.
 
-<img width="1916" height="867" alt="Captura de ecrã 2025-09-21 215343" src="https://github.com/user-attachments/assets/dd2f61c5-169f-4677-8be3-f5938f4199c7" />
+https://github.com/user-attachments/assets/dd83d6ff-fb64-4dc5-92bc-0f959a604b07
 
 ---
 
